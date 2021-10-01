@@ -111,7 +111,7 @@ export default {
       this[input].isValid = true;
     },
     validateForm() {
-      this.formValid = true;
+      this.formIsValid = true;
       if (this.firstName.val === '') {
         this.firstName.isValid = false;
         this.formIsValid = false;
