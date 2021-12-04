@@ -1,4 +1,5 @@
 <template>
+<div>
   <section>
     <base-card>
       <h2>{{ fullName }}</h2>
@@ -14,6 +15,7 @@
       <router-view></router-view>
     </base-card>
   </section>
+  <section>
   <base-card>
     <base-badge
       v-for="area in selectedCoach.areas"
@@ -23,6 +25,8 @@
     ></base-badge>
     <p>{{ selectedCoach.description }}</p>
   </base-card>
+  </section>
+  </div>
 </template>
 
 <script>
